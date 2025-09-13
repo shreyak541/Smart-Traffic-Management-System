@@ -120,13 +120,18 @@ npm start
 
 #### Option 2: Python Demonstration
 ```bash
+# Full system demonstration
 python main.py
+
+# Quick greeting
+python main.py --hello
 ```
 Includes:
 - Fuzzy logic controller testing
 - Hybrid AI learning demonstration  
 - Performance comparison between all controllers
 - Automated report generation
+- Simple greeting functionality
 
 #### Option 3: Streamlit Dashboard
 ```bash
@@ -240,7 +245,8 @@ IS-2/
 │   ├── simulation/
 │   │   └── environment.py         # Traffic intersection simulation
 │   ├── utils/
-│   │   └── evaluation.py         # Performance evaluation
+│   │   ├── evaluation.py         # Performance evaluation
+│   │   └── greeting.py           # Simple greeting functionality
 │   └── visualization/
 │       └── dashboard.py           # Streamlit dashboard
 │
@@ -262,6 +268,7 @@ IS-2/
 ├── main.py                        # Python demonstration script
 ├── test_system.py                 # System health checks
 ├── test_fuzzy.py                  # Fuzzy logic tests
+├── test_greeting.py               # Greeting functionality tests
 ├── requirements.txt               # Python dependencies
 ├── README.md                      # This documentation
 ├── COMMANDS.md                    # Setup & usage commands
@@ -291,6 +298,24 @@ IS-2/
 - **Plotly**: Advanced data visualization
 
 ## 📋 Usage Examples
+
+### Simple Greeting
+```bash
+# Display a friendly greeting
+python main.py --hello
+```
+
+```python
+# Use greeting in code
+from src.utils.greeting import hello, get_greeting_message
+
+# Display full greeting
+hello()
+
+# Get greeting message as string
+message = get_greeting_message()
+print(message)
+```
 
 ### Basic Fuzzy Controller Test
 ```python

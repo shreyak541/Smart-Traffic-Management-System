@@ -15,7 +15,9 @@ from simulation.environment import TrafficIntersection
 from fuzzy_logic.controller import FuzzyTrafficController
 from ai_agent.hybrid_controller import HybridFuzzyAIController, FixedTimeController
 from utils.evaluation import TrafficEvaluator
+from utils.greeting import hello
 import warnings
+import argparse
 
 # Suppress TensorFlow warnings for cleaner output
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
@@ -280,5 +282,16 @@ def main():
 
 
 if __name__ == "__main__":
+    # Add command line argument parsing
+    parser = argparse.ArgumentParser(description="Smart Traffic Management System")
+    parser.add_argument("--hello", action="store_true", help="Display a greeting message")
+    args = parser.parse_args()
+    
+    # Handle hello command
+    if args.hello:
+        hello()
+        exit(0)
+    
+    # Run main demonstration
     exit_code = main()
     exit(exit_code)
