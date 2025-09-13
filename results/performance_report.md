@@ -1,6 +1,6 @@
 
 # Traffic Management System Performance Report
-Generated on: 2025-09-11 22:48:12
+Generated on: 2025-09-13 06:28:31
 
 ## Executive Summary
 
@@ -10,44 +10,44 @@ on a simulated 4-way intersection under varying traffic conditions.
 ## Controller Comparison
 
        Controller  Avg Wait Time (s)  Max Wait Time (s)  Total Throughput  Throughput/min  Avg Queue Length  Max Queue Length  CO2 Emissions (kg)  Fuel Consumption (L)  Emergency Response (s)  Signal Changes
-Fixed-Time (120s)              16.66              34.21              1835           183.5             51.78               116               2.589                108.06                     0.0              10
- Pure Fuzzy Logic               0.06               1.00              1921           192.1              0.07                 2               0.004                  0.01                     0.0               0
-  Hybrid Fuzzy-AI               0.26               2.50              1887           188.7              0.29                 3               0.014                  0.04                     0.0               0
+Fixed-Time (120s)              16.18              34.15              1820           182.0             49.92               105               2.496                102.38                     0.0              10
+ Pure Fuzzy Logic               0.06               1.00              1924           192.4              0.06                 2               0.003                  0.01                     0.0               0
+  Hybrid Fuzzy-AI               0.77               4.00              2037           203.7              1.05                 7               0.053                  0.14                     0.0              22
 
 ## Key Findings
 
 
 ### Best Performers by Category:
 - **Lowest Average Wait Time**: Pure Fuzzy Logic (0.06s)
-- **Highest Throughput**: Pure Fuzzy Logic (192.10 vehicles/min)
-- **Lowest CO2 Emissions**: Pure Fuzzy Logic (0.004 kg)
+- **Highest Throughput**: Hybrid Fuzzy-AI (203.70 vehicles/min)
+- **Lowest CO2 Emissions**: Pure Fuzzy Logic (0.003 kg)
 - **Fastest Emergency Response**: Fixed-Time (120s) (0.00s)
 
 ### Performance Analysis:
 
 
 #### Fixed-Time (120s)
-- Average wait time: 16.66s
-- Throughput: 183.5 vehicles/minute
-- Environmental impact: 2.589 kg CO2
-- Queue management: Average 51.78 vehicles
+- Average wait time: 16.18s
+- Throughput: 182.0 vehicles/minute
+- Environmental impact: 2.496 kg CO2
+- Queue management: Average 49.92 vehicles
 - Adaptability: 10 signal changes per hour
 
 
 #### Pure Fuzzy Logic
 - Average wait time: 0.06s
-- Throughput: 192.1 vehicles/minute
-- Environmental impact: 0.004 kg CO2
-- Queue management: Average 0.07 vehicles
+- Throughput: 192.4 vehicles/minute
+- Environmental impact: 0.003 kg CO2
+- Queue management: Average 0.06 vehicles
 - Adaptability: 0 signal changes per hour
 
 
 #### Hybrid Fuzzy-AI
-- Average wait time: 0.26s
-- Throughput: 188.7 vehicles/minute
-- Environmental impact: 0.014 kg CO2
-- Queue management: Average 0.29 vehicles
-- Adaptability: 0 signal changes per hour
+- Average wait time: 0.77s
+- Throughput: 203.7 vehicles/minute
+- Environmental impact: 0.053 kg CO2
+- Queue management: Average 1.05 vehicles
+- Adaptability: 22 signal changes per hour
 
 
 ## Recommendations
